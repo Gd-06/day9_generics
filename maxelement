@@ -1,0 +1,28 @@
+package day9_generics;
+import java.util.Scanner;
+
+ class uc1_maxelement {
+     public void Integer(int a, int b, int c) {
+         int max = a;
+         if (b > max && b > c) {
+             max = b;
+         } else if (c > max) {
+             max = c;
+         }
+         System.out.println("the maximum number is " + max);
+     }
+ }
+
+     public class maxElement {
+         public static void main(String[] args) {
+             Scanner sc = new Scanner(System.in);
+             uc1_maxelement tm = new uc1_maxelement();
+             System.out.println("Enter three numbers");
+             int num1 = sc.nextInt();
+             int num2 = sc.nextInt();
+             int num3 = sc.nextInt();
+             tm.Integer(num1, num2, num3);
+         }
+     }
+
+
